@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body style="background-color:green;">
+<h1 ><FONT COLOR="red">Discograficas </FONT></h1>
+<div style="background-color: whitesmoke;">
+<H2 > Estas son las Discograficas mas importantes: </H2>	
+</div>
+<ul type="square" th:each= "dig: ${DIG}">
+			
+	 	<li><p  th:text="${dig.nombreDiscografia}"></p> </li>
+	 
+	</ul>
+	<p>
+  Pincha aqui para ver los Discos más importantes de estas discograficas.
+  <a href="http://localhost:8080/Disco">Discos más importantes</a>.
+</p>
+</p>
+	<p>
+  Pincha aqui para ver los Interpretes  más importantes.
+  <a href="http://localhost:8080/interpretes">Interpretes</a>.
+</p>
+</body>
+</html>

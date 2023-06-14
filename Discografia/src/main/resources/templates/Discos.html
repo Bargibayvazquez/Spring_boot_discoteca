@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body style="background-color:green;">
+<h1 ><FONT COLOR="red">Discos </FONT></h1>
+<div style="background-color: whitesmoke;">
+<H2 > Estas son los discos del momento: </H2>	
+</div>
+<ul type="square" th:each= "dis: ${DIS}">
+	 	<li><p th:text="${dis.nombre}"></p> </li>
+	</ul>
+	<p>
+  Pincha aqui para ver las Discografiacas.
+  <a href="http://localhost:8080/Discografica">Discograficas</a>.
+</p>
+	<p>
+  Pincha aqui para ver los Interpretes  más importantes.
+  <a href="http://localhost:8080/interpretes">Interpretes</a>.
+</p>
+</body>
+</html>
